@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Uri picUri;
     private File picFile;
     public static String imagePath;
-    protected int LOAD_IMAGE_FROM_CAMERA = 102,LOAD_IMAGE_FROM_GALLERY = 103;
+    protected int LOAD_IMAGE_FROM_CAMERA = 2,LOAD_IMAGE_FROM_GALLERY = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

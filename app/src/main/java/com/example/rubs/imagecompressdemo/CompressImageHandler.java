@@ -20,7 +20,7 @@ public class CompressImageHandler {
     private static final float maxHeight = 920.0f;
     private static final float maxWidth = 920.0f;
 
-    public static int calculateInSampleSize(BitmapFactory.Options options, int requireWidth, int requireHeight) {
+    public static int calculateSampleSize(BitmapFactory.Options options, int requireWidth, int requireHeight) {
         final int actualHeight = options.outHeight;
         final int actualWidth = options.outWidth;
         int sampleSize = 1;
@@ -63,7 +63,7 @@ public class CompressImageHandler {
                 actualWidth = (int) maxWidth;
             }
         }
-        options.inSampleSize = calculateInSampleSize(options, actualWidth, actualHeight);
+        options.inSampleSize = calculateSampleSize(options, actualWidth, actualHeight);
         options.inJustDecodeBounds = false;
         options.inDither = false;
         options.inPurgeable = true;

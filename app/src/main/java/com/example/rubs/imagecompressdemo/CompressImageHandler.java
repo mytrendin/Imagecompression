@@ -118,7 +118,7 @@ public class CompressImageHandler {
         }
         return filepath;
     }
-    public static String getFilename() {
+    public static String createFile() {
         File imageFile = new File(Environment.getExternalStorageDirectory()
                 + "/ImagecompressDemo/Images");
         if (!imageFile.exists()) {

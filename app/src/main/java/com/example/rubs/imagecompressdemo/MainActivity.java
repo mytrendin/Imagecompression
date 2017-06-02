@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imagePath = CompressImageHandler.getFilename();
+        imagePath = CompressImageHandler.createFile();
         captureImage = (ImageView)findViewById(R.id.captureImage);
         captureImage.setOnClickListener(new View.OnClickListener() {
             @Override
